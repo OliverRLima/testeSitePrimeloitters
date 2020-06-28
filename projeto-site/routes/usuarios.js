@@ -9,7 +9,7 @@ let sessoes = [];
 
 /* Redirecionar um usuario */
 router.post('/redirecionar', function(req, res, next) {
-	console.log('Redirecionando um usuário');
+	res.send('redirecionando');
 });
 
 /* Recuperar usuário por login e senha */

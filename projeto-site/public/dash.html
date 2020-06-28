@@ -2,26 +2,17 @@
 <html lang="pt">
 
 <head>
-    <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Title Page-->
     <title>Keep Runnin'</title>
 
-    <!-- Favicons -->
     <link href="images/favicon.png" rel="icon">
-
-    <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-
-    <!-- Bootstrap CSS-->
     <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
-
-    <!-- Vendor CSS-->
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
     <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
@@ -29,15 +20,13 @@
     <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
 
 </head>
 
 <body class="animsition" onload="atualizar()">
     <div class="page-wrapper">
-        <!-- HEADER MOBILE-->
+        <!-- Versão Mobile -->
         <header class="header-mobile d-block d-lg-none">
             <div class="header-mobile__bar">
                 <div class="container-fluid">
@@ -54,122 +43,153 @@
             <nav class="navbar-mobile">
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
-
                         <li>
                             <a href="dash.html">
                                 <i class="fas fa-chart-bar"></i>Início</a>
                         </li>
+
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Gráficos</a>
+                                <i class="fas fa-tachometer-alt"></i>Máquinas
+                            </a>
+
                             <ul id="lista_maquinas2" class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <!-- <li>
-                                    <a href="chart.html">Máquina 1</a>
+                                <li>
+                                    <a href="chart.html">Máquina 1
+
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="chart.html">Máquina 2</a>
+                                    <a href="chart.html">Máquina 2
+
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="chart.html">Máquina 3</a>
+                                    <a href="chart.html">Máquina 3
+
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="chart.html">Máquina 4</a>
-                                </li> -->
+                                    <a href="chart.html">Máquina 4
+
+                                    </a>
+                                </li>
                             </ul>
+
                         </li>
+
                         <li>
                             <a href="table.html">
-                                <i class="fas fa-table"></i>Tabelas</a>
+                                <i class="fas fa-table"></i>Tabelas
+                            </a>
                         </li>
+
                         <li>
                             <a href="form.html">
-                                <i class="far fa-check-square"></i>Relatório</a>
+                                <i class="far fa-check-square"></i>Relatório
+                            </a>
                         </li>
-                        <li>
-                            <a href="calendar.html">
-                                <i class="fas fa-calendar-alt"></i>Calendar</a>
-                        </li>
+
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-copy"></i>Configurações</a>
+                                <i class="fas fa-copy"></i>Configurações
+                            </a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="forget-pass.html">Trocar senha</a>
+                                    <a href="forget-pass.html">Trocar senha
+
+                                    </a>
                                 </li>
                             </ul>
                         </li>
+
                         <li>
                             <a href="estabelecimentos.html">
-                                <i class="fas fa-calendar-alt"></i>Trocar estabelecimento</a>
+                                <i class="fas fa-calendar-alt"></i>Trocar estabelecimento
+                            </a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <!-- END HEADER MOBILE-->
+        <!-- Fim da versão mobile -->
 
-        <!-- MENU SIDEBAR  InicioDoSitePadrao-->
+        <!-- InicioDoSitePadrao-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo" id="logo">
-                <a href="#">PrimeLoitters</a>
+                <a href="#">
+                    PrimeLoitters
+                </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active">
                             <a href="dash.html">
-                                <i class="fas fa-chart-bar"></i>Início</a>
+                                <i class="fas fa-chart-bar"></i>Início
+                            </a>
                         </li>
                         <li class=" has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Máquinas</a>
+                                <i class="fas fa-tachometer-alt"></i>Máquinas
+                            </a>
                             <ul id="lista_maquinas" class="list-unstyled navbar__sub-list js-sub-list">
                             </ul>
                         </li>
 
                         <li>
                             <a href="table.html">
-                                <i class="fas fa-table"></i>Tabelas</a>
+                                <i class="fas fa-table"></i>Tabelas
+                            </a>
                         </li>
+
                         <li>
                             <a href="form.html">
-                                <i class="far fa-check-square"></i>Relatório</a>
+                                <i class="far fa-check-square"></i>Relatório
+                            </a>
                         </li>
+
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-copy"></i>Configurações</a>
+                                <i class="fas fa-copy"></i>Configurações
+                            </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="forget-pass.html">Trocar senha</a>
+                                    <a href="forget-pass.html">
+                                        Trocar senha
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://1drv.ms/u/s!AlpWwqoNyNMaaiMSz7pBR0UVxsU?e=1IusJG"
+                                        download="kprunnin" target="_blank">Baixar aplicação
+
+                                    </a>
                                 </li>
                             </ul>
                         </li>
+
                         <li class="has-sub">
                             <a class="js-arrow" href="./estabelecimentos.html">
-                                <i class="fas fa-desktop"></i>Trocar estabelecimento</a>
+                                <i class="fas fa-desktop"></i> Trocar estabelecimento
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </aside>
-        <!-- END MENU SIDEBAR-->
+        <!-- fim InicioDoSitePadrao -->
 
-        <!-- PAGE CONTAINER-->
+        <!-- PAGE CONTAINER -->
         <div class="page-container">
-            <!-- HEADER DESKTOP-->
+            <!-- Versão Desktop -->
             <header class="header-desktop">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap">
-                            <form class="form-header" action="" method="POST">
-                                <!-- <input class="au-input au-input--xl" type="text" name="search" placeholder="Precisa de ajuda?" /> -->
-                                <!-- <button class="au-btn--submit" type="submit">
-                              <i class="zmdi zmdi-search"></i>
-                                                     </button> -->
-                            </form>
+                            <form class="form-header" action="" method="POST"></form>
                             <div class="header-button">
                                 <div class="noti-wrap">
-                                    
+
                                     <div class="noti__item js-item-menu">
                                         <i class="zmdi zmdi-notifications"></i>
                                         <span id="quantidade_alertas" class="quantity"></span>
@@ -199,22 +219,7 @@
                                                     <span class="email" id="codigo_estabelecimento"></span>
                                                 </div>
                                             </div>
-                                            <!-- <div class="account-dropdown__body ">
-                                                                                          <div class="account-dropdown__item ">
-                                                                                        <a href="# ">
-                                                                                            <i class="zmdi zmdi-account "></i>Account</a>
-                                                                                       </div>
-                                                                                          <div class="account-dropdown__item ">
-                                                                                        <a href="# ">
-                                                                                         <i class="zmdi zmdi-settings "></i>Setting</a>
-                                                                                 </div>
-                                                                                    <div class="account-dropdown__item ">
-                                                                                           <a href="# ">
-                                                                                         <i class="zmdi zmdi-money-box "></i>Billing</a>
-                                                                              </div>
-                                                                       </div> -->
                                             <div class="account-dropdown__footer ">
-
                                                 <a onclick="logoff()"><i class="zmdi zmdi-power "></i>Sair</a>
                                             </div>
                                         </div>
@@ -225,9 +230,6 @@
                     </div>
                 </div>
             </header>
-            <!-- HEADER DESKTOP FimDoSitePadrao-->
-
-            <!-- MAIN CONTENT-->
             <div class="main-content ">
                 <div class="section__content section__content--p30 ">
                     <div class="container-fluid ">
@@ -235,249 +237,160 @@
                             <div class="col-md-12 ">
                                 <div class="overview-wrap ">
                                     <h2 class="title-1 ">Tela inicial</h2>
-                                    <!-- <button class="au-btn au-btn-icon au-btn--blue ">
-                                        <i class="zmdi zmdi-plus "></i>add item</button> -->
                                 </div>
                             </div>
                         </div>
-                        <div class="row m-t-25 ">
-                            <div class="col-sm-6 col-lg-3 ">
-                                <div class="overview-item overview-item--c1 ">
-                                    <div class="overview__inner ">
-                                        <div class="overview-box clearfix ">
-                                            <div class="icon ">
-                                                <i class="zmdi zmdi-shopping-cart "></i>
+
+                        <div class="row m-t-25">
+                            <center>
+                                <button class="btn btn-secondary" onclick="primeiroQuadro()">Ranking + alertas</button>
+                                <button class="btn btn-secondary" onclick="segundoQuadro()">Ranking alertas
+                                    lançados</button>
+                                <button class="btn btn-secondary" onclick="terceiroQuadro()">Atividades
+                                    recentes</button>
+                                <br><br>
+                                <div class="row2" id="quadro1" style="display: none; width: 80%;">
+                                    <div class="col-lg-6">
+                                        <div class="au-card au-card--no-shadow au-card--no-pad m-b-40 ">
+                                            <div class="au-card-title">
+                                                <div class="bg-overlay overview-item--c1 "></div>
+                                                <h3>
+                                                    <i class="zmdi zmdi-account-calendar "></i>
+                                                    <h3 id="data-hora "></h3>
+                                                </h3>
                                             </div>
-                                            <div class="text ">
-                                                <h2>10368</h2>
-                                                <span>Vendas nos meses</span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart ">
-                                            <canvas id="widgetChart1"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 ">
-                                <div class="overview-item overview-item--c2 ">
-                                    <div class="overview__inner ">
-                                        <div class="overview-box clearfix ">
-                                            <div class="icon ">
-                                                <i class="zmdi zmdi-calendar-note "></i>
-                                            </div>
-                                            <div class="text ">
-                                                <h2>12:00</h2>
-                                                <span>Horário de pico</span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart ">
-                                            <canvas id="widgetChart2"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-sm-6 col-lg-3 ">                         <div class="overview-item overview-item--c3 ">          
-                                                  <div class="overview__inner ">                                 <div class="overview-box clearfix ">
-                                                                 <div class="icon ">
-                                                                  <i class="zmdi zmdi-account-o "></i>
-                                                              </div>
-                                                                 <div class="text ">
-                                                                     <h2>1,086</h2>
-                                                                  <span>Clientes nos meses</span>
-                                                           </div>
+                                            <center>
+                                                <div class="au-task js-list-load ">
+                                                    <div class="au-task__title ">
+                                                        <h5>Ranking máquinas com + alertas</h5>
+                                                        <h3 id="nome_estabelecimento3"></h3>
                                                     </div>
-                                                 <div class="overview-chart ">
-                                                     <canvas id="widgetChart3"></canvas>
+                                                    <table class="table table-borderless table-striped table-earning">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Código Máquina</th>
+                                                                <th>Número</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="ranking_maquinas_alertas"></tbody>
+                                                    </table>
+                                                </div>
+                                            </center>
                                         </div>
-                                             </div>
-                                         </div>
-                                        </div> -->
-                            <!-- <div class="col-sm-6 col-lg-3 ">
-                                                  <div class="overview-item overview-item--c4 ">
-                                                         <div class="overview__inner ">
-                                                             <div class="overview-box clearfix ">
-                                            <div class="icon ">
-                                                <i class="zmdi zmdi-money "></i>
-                                                              </div>
-                                                              <div class="text ">
-                                                                     <h2>$1,060,386</h2>
-                                                                        <span>Lucros dos meses</span>                                     </div>          
-                                                      </div>                                 <div class="overview-chart ">
-                                                                 <canvas id="widgetChart4"></canvas>
-                                                          </div>
-                                                      </div>
-                                                     </div>
-                                                 </div> -->
-                            <div class="row2">
-                                <div class="col-lg-6">
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+                        <div class="row2" id="quadro2" style="display: none;">
+                            <center>
+                                <div class="col-lg-6" style="width: 80%;">
+                                    <div class="au-card au-card--no-shadow au-card--no-pad m-b-40 ">
+                                        <div class="au-card-title">
+                                            <div class="bg-overlay overview-item--c2 "></div>
+                                            <h3>
+                                                <i class="zmdi zmdi-account-calendar "></i>
+                                                <h3 id="data-hora2 "></h3>
+                                            </h3>
+                                        </div>
+                                        <center>
+                                            <div class="au-task js-list-load ">
+                                                <div class="au-task__title ">
+                                                    <h5>Ranking dos alertas lançados</h5>
+                                                </div>
+                                                <!-- <div id="recuperar_alertas2" class="au-task-list js-scrollbar3 ">
+                                                </div> -->
+                                                <table class="table table-borderless table-striped table-earning">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Alerta</th>
+                                                            <th>Número de alertas</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="ranking_alertas"></tbody>
+                                                </table>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+                        <div class="row2" id="quadro3" style="display: none;">
+                            <center>
+                                <div class="col-lg-6" style="width: 80%;">
                                     <div class="au-card au-card--no-shadow au-card--no-pad m-b-40 ">
                                         <div class="au-card-title">
                                             <div class="bg-overlay bg-overlay--blue "></div>
                                             <h3>
                                                 <i class="zmdi zmdi-account-calendar "></i>
-                                                <h3 id="data-hora "></h3>
+                                                <h3 id="data-hora1 "></h3>
                                             </h3>
-                                            <!-- <button class="au-btn-plus ">
-                                                                  <i class="zmdi zmdi-plus "></i>
-                                                                 </button> -->
                                         </div>
-                                        <div class="au-task js-list-load ">
-                                            <div class="au-task__title ">
-                                                <p>Atividades recentes</p>
-                                                <h3 id="nome_estabelecimento3"></h3>
-                                            </div>
-                                            <div id="recuperar_alertas" class="au-task-list js-scrollbar3 ">
-                                                <!-- <div class="au-task__item au-task__item--danger ">
-                                                    <div class="au-task__item-inner ">
-                                                        <h5 class="task ">
-                                                            Caixa 1: Disco atingiu 97% de uso por
-                                                            <br>mais de 20 segundos.
-                                                        </h5>
-                                                
-                                                    </div>
+                                        <center>
+                                            <div class="au-task js-list-load ">
+                                                <div class="au-task__title ">
+                                                    <p>Atividades recentes</p>
+                                                    <h3 id="nome_estabelecimento3"></h3>
                                                 </div>
-                                                <div class="au-task__item au-task__item--warning ">
-                                                    <div class="au-task__item-inner ">
-                                                        <h5 class="task ">
-                                                            Caixa 4: CPU atingiu 94% de uso
-                                                            por<br>mais de 10 segundos.
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <div class="au-task__item au-task__item--danger ">
-                                                    <div class="au-task__item-inner ">
-                                                        <h5 class="task ">
-                                                            Caixa 2: Memória atingiu 99% de uso
-                                                            por<br>mais de 20 segundos.
-                                                        </h5>
-                                                    </div>
-                                                </div> -->
-                                                <!-- <div class=" col-lg-6 ">
-                                                  <div class=" au-card recent-report ">
-                                                      <div class=" au-card-inner ">
-                                                             <h3 class=" title-2 ">Relatório recente</h3>
-                                                             <div class=" chart-info ">
-                                                              <div class=" chart-info__left ">
-                                                               <div class=" chart-note ">
-                                                                <span class=" dot dot--blue "></span>
-                                                             <span>Monitoramento</span>
-                                                         </div>
-                                                         <div class=" chart-note mr-0">
-                                                            <span class="dot dot--green "></span>
-                                                            <span>Sobrecarga</span>
+                                                <div id="recuperar_alertas" class="au-task-list js-scrollbar3 ">
                                                 </div>
                                             </div>
-                                            <div class="chart-info__right ">
-                                                <div class="chart-statis">
-                                                    <span class="index incre ">
-                                                        <i class="zmdi zmdi-long-arrow-up "></i>25%</span>
-                                                    <span class="label ">Monitoramento</span>
-                                                </div>
-                                                <div class="chart-statis mr-0 ">
-                                                    <span class="index decre ">
-                                                        <i class="zmdi zmdi-long-arrow-down "></i>10%</span>
-                                                    <span class="label ">Sobrecarga</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="recent-report__chart ">
-                                            <canvas id="recent-rep-chart"></canvas>
-                                        </div>
+                                        </center>
                                     </div>
                                 </div>
-                            </div> -->
-
-                                                <!-- 
-                                  <div class="col-lg-6 ">
-                                <div class="au-card chart-percent-card ">
-                                       <div class="au-card-inner ">
-                                        <h3 class="title-2 tm-b-5 ">Porcentagem</h3>
-                                           <div class="row no-gutters ">
-                                               <div class="col-xl-6 ">
-                                                   <div class="chart-note-wrap ">
-                                                       <div class="chart-note mr-0 d-block ">
-                                                           <span class="dot dot--blue "></span>
-                                                           <span>Monitoramento</span>
-                                                       </div>
-                                                       <div class="chart-note mr-0 d-block ">
-                                                           <span class="dot dot--red "></span>
-                                                           <span>Sobrecarga</span>
-                                                       </div>
-                                                   </div>
-                                               </div>
-                                               <div class="col-xl-6 ">
-                                                   <div class="percent-chart ">
-                                                       <canvas id="percent-chart"></canvas>
-                                                   </div>
-                                               </div>
-                                           </div>
-                                       </div>
-                                </div>
-                               </div> -->
-
-
-                                                <!-- </div> -->
-
-
-
-                                            </div>
-                                        </div>
-                                        <div class="row ">
-                                            <div class="col-md-12 ">
-                                                <div class="copyright ">
-                                                    <p>© Copyright <b>PrimeLoitters</b>. Todos os direitos
-                                                        reservados</a>.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END MAIN CONTENT-->
-                            <!-- END PAGE CONTAINER-->
+                            </center>
                         </div>
 
                     </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <div class="copyright ">
+                                <p>© Copyright <b>PrimeLoitters</b>. Todos os direitos reservados</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Jquery JS-->
-                    <script src="vendor/jquery-3.2.1.min.js "></script>
-                    <!-- Bootstrap JS-->
-                    <script src="vendor/bootstrap-4.1/popper.min.js "></script>
-                    <script src="vendor/bootstrap-4.1/bootstrap.min.js "></script>
-                    <!-- Vendor JS       -->
-                    <script src="vendor/slick/slick.min.js ">
-                    </script>
-                    <script src="vendor/wow/wow.min.js "></script>
-                    <script src="vendor/animsition/animsition.min.js "></script>
-                    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js ">
-                    </script>
-                    <script src="vendor/counter-up/jquery.waypoints.min.js "></script>
-                    <script src="vendor/counter-up/jquery.counterup.min.js ">
-                    </script>
-                    <script src="vendor/circle-progress/circle-progress.min.js "></script>
-                    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js "></script>
-                    <script src="vendor/chartjs/Chart.bundle.min.js "></script>
-                    <script src="vendor/select2/select2.min.js "></script>
-                    <script src="js/data.js "></script>
 
-                    <!-- Main JS-->
-                    <script src="js/main.js "></script>
+                <!-- Jquery JS-->
+                <script src="vendor/jquery-3.2.1.min.js "></script>
+                <!-- Bootstrap JS-->
+                <script src="vendor/bootstrap-4.1/popper.min.js "></script>
+                <script src="vendor/bootstrap-4.1/bootstrap.min.js "></script>
+                <!-- Vendor JS       -->
+                <script src="vendor/slick/slick.min.js ">
+                </script>
+                <script src="vendor/wow/wow.min.js "></script>
+                <script src="vendor/animsition/animsition.min.js "></script>
+                <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js ">
+                </script>
+                <script src="vendor/counter-up/jquery.waypoints.min.js "></script>
+                <script src="vendor/counter-up/jquery.counterup.min.js ">
+                </script>
+                <script src="vendor/circle-progress/circle-progress.min.js "></script>
+                <script src="vendor/perfect-scrollbar/perfect-scrollbar.js "></script>
+                <script src="vendor/chartjs/Chart.bundle.min.js "></script>
+                <script src="vendor/select2/select2.min.js "></script>
+                <script src="js/data.js "></script>
 
-                    <!-- Dashboard JS -->
-                    <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
-                    <script type="text/javascript" src="https://www.chartjs.org/samples/latest/utils.js"></script>
-                    <script type="text/javascript" src="funcoes.js"></script>
-                    <script type="text/javascript" src="./js/graficoMemoria.js"></script>
-                    <script type="text/javascript" src="./js/graficoCpu.js"></script>
-                    <script type="text/javascript" src="./js/graficoDisco.js"></script>
+                <!-- Main JS-->
+                <script src="js/main.js "></script>
+
+                <!-- Dashboard JS -->
+                <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
+                <script type="text/javascript" src="https://www.chartjs.org/samples/latest/utils.js"></script>
+                <script type="text/javascript" src="funcoes.js"></script>
+                <script type="text/javascript" src="./js/graficoMemoria.js"></script>
+                <script type="text/javascript" src="./js/graficoCpu.js"></script>
+                <script type="text/javascript" src="./js/graficoDisco.js"></script>
+                <script type="text/javascript" src="./js/funcaoBotao.js"></script>
 </body>
 
 </html>
 <!-- end document-->
 
 <script>
-
     function atualizar() {
         coletar();
         alertas();
@@ -486,6 +399,7 @@
         nome_estabelecimento3.innerHTML = `${getNomeEstab()}`;
 
         codigo_estabelecimento.innerHTML = `${getCodEstab()}`;
+        primeiroQuadro();
     }
     let idMaquina;
 
@@ -494,7 +408,9 @@
         for (i = 0; i < opcoes.length; i++) {
             if (event.target.id == opcoes[i]) {
 
-                fetch(`/usuarios/redirecionar`, { cache: 'no-store' }).then(function (response) {
+                fetch(`/usuarios/redirecionar`, {
+                    cache: 'no-store'
+                }).then(function (response) {
                     sessionStorage.id_maquina_meuapp = event.target.id;
                     window.location.href = "chart.html";
                 });
@@ -510,7 +426,9 @@
     var opcoes = [];
 
     function coletar() {
-        fetch(`/maquinas/recuperar/${getIdEstab()}`, { cache: 'no-store' }).then(function (response) {
+        fetch(`/maquinas/recuperar/${getIdEstab()}`, {
+            cache: 'no-store'
+        }).then(function (response) {
             if (response.ok) {
 
                 response.json().then(function (resposta) {
@@ -543,12 +461,18 @@
     }
 
     function alertas() {
-        fetch(`/alertas/recuperar/${getIdEstab()}`, { cache: 'no-store' }).then(function (response) {
+        fetch(`/alertas/recuperar/${getIdEstab()}`, {
+            cache: 'no-store'
+        }).then(function (response) {
             if (response.ok) {
 
                 response.json().then(function (resposta) {
 
-                    quantidade_alertas.innerHTML += `${resposta.length}`;
+                    if (resposta.length > 7) {
+                        quantidade_alertas.innerHTML += `+7`;
+                    } else {
+                        quantidade_alertas.innerHTML += `${resposta.length}`;
+                    }
                     mini_alerta.innerHTML += `
                         <div class="notifi__title">
                             <p>Você tem ${resposta.length} notificações</p>
@@ -594,5 +518,115 @@
             .catch(function (error) {
                 console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
             });
+    }
+
+
+    function rankingMaquinas() {
+        fetch(`/alertas/ranking/${getIdEstab()}`, {
+            cache: 'no-store'
+        }).then(function (response) {
+            if (response.ok) {
+
+                var antiga = null;
+                var vetorRanking = [];
+                var vetorRanking2 = [];
+                var contador = 0;
+
+                response.json().then(function (resposta) {
+
+                    ranking_maquinas_alertas.innerHTML = ``;
+
+                    for (i = 0; i < resposta.length; i++) {
+
+                        if (antiga == resposta[i].codigoMaquina) {
+                            vetorRanking.push(resposta[i].codigoMaquina);
+                        }
+
+                        if (antiga != resposta[i].codigoMaquina) {
+                            vetorRanking2.push(resposta[i].codigoMaquina);
+                        }
+
+                        antiga = resposta[i].codigoMaquina;
+                    }
+
+                    for (j = 0; j < vetorRanking2.length; j++) {
+                        for (k = 0; k < vetorRanking.length; k++) {
+                            if (vetorRanking2[j] == vetorRanking[k]) {
+                                contador++;
+                            }
+                        }
+
+                        ranking_maquinas_alertas.innerHTML += `
+                        <tr>
+                            <td>${vetorRanking2[j]}</td>
+                            <td>${contador}</td>
+                        </tr>`;
+                        contador = 0;
+                    }
+
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
+    function grafico_alertas() {
+
+        fetch(`/alertas/ranking/${getIdEstab()}`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                var contadorCPU = 0;
+                var contadorDisco = 0;
+                var contadorMemoria = 0;
+
+                response.json().then(function (resposta) {
+
+                    ranking_alertas.innerHTML = ``;
+
+                    for (i = 0; i < resposta.length; i++) {
+                        var registro = resposta[i];
+
+                        if (registro.alerta.includes('Uso de cpu')) {
+                            contadorCPU++;
+                        } else if (registro.alerta.includes('Uso de memória')) {
+                            contadorMemoria++;
+                        } else if (registro.alerta.includes('Uso de disco')) {
+                            contadorDisco++;
+                        } else {
+
+                        }
+                    }
+
+                    ranking_alertas.innerHTML += `
+                    <tr>
+                        <td>Alerta de CPU</td>
+                        <td>${contadorCPU}</td>
+                    </tr>
+                    <tr>
+                        <td>Alerta de Memoria</td>
+                        <td>${contadorMemoria}</td>
+                    </tr>
+                    <tr>
+                        <td>Alerta de Disco</td>
+                        <td>${contadorDisco}</td>
+                    </tr>
+                    `;
+
+                });
+            } else {
+                console.log('erro');
+                // if (contador == 0) {
+                //     abreModal();
+                //     contador++;
+                // }
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+
     }
 </script>

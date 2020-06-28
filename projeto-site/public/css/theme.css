@@ -79,6 +79,11 @@ ul {
     margin: 0;
 }
 
+.dentro {
+    width: 100%;
+    height: 100%;
+}
+
 button,
 input[type='button'] {
     cursor: pointer;
@@ -329,14 +334,14 @@ section {
 
 .page-wrapper {
     overflow: hidden;
-    background: #e5e5e5;
+    background: black;
     padding-bottom: 8vh;
 }
 
 @media (max-width: 991px) {
     .page-wrapper {
         overflow: auto;
-        background: #e5e5e5;
+        background: black;
         padding-bottom: 12vh;
     }
 }
@@ -6328,6 +6333,7 @@ section {
 }
 
 .m-t-25 {
+    justify-content: center;
     margin-top: 25px;
 }
 

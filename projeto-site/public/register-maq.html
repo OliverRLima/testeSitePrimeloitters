@@ -55,7 +55,8 @@
                                         placeholder="A58REF689C">
                                 </div>
                                 <br>
-                                <h5 style="font-size:10px;">*Os campos com asterisco (*) são obrigatórios</h5>
+                                <h5 style="font-size:10px;">*Os campos com asterisco (*) são obrigatórios e devem ter no
+                                    minímo 5 caracteres</h5>
                                 <h5 style="font-size:10px;">*Dados adicionais serão acrescentados pela aplicação em
                                     relação a máquina registrada</h5>
                             </center>
@@ -110,25 +111,25 @@
     verificar_autenticacao();
 
     function cadastrar() {
-            var formulario = new URLSearchParams(new FormData(form_cadastro));
-            fetch(`/maquinas/cadastrar/${getIdEstab()}`, {
-                method: "POST",
-                body: formulario
-            }).then(function (response) {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch(`/maquinas/cadastrar/${getIdEstab()}`, {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
 
-                if (response.ok) {
+            if (response.ok) {
 
-                    window.location.href = 'dash.html';
+                window.location.href = 'confirmMaquina.html';
 
-                } else {
+            } else {
 
-                    console.log('Erro de cadastro!');
-                    response.text().then(function (resposta) {
-                    });
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                });
 
-                }
-            });
+            }
+        });
 
-            return false;
-        }
+        return false;
+    }
 </script>

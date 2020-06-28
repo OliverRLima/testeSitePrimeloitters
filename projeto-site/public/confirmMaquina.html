@@ -12,6 +12,7 @@
     <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="css/theme.css" rel="stylesheet" media="all">
+
     <style>
         body {
             background-color: black;
@@ -29,44 +30,18 @@
                     </div>
 
                     <div class="login-form">
-
                         <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                             <center>
                                 <div class="form-group">
                                     <label>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        *Digite um nome para o seu estabelecimento
+                                        Parabéns! Sua máquina foi cadastrada com sucesso, porém ainda não está configurada.
+                                        Baixe através do link abaixo nossa aplicação na máquina desejada e a configure de forma adequada.
+                                        Após isso será possível visualizar os dados coletados nos gráficos correspondentes
                                     </label>
-<<<<<<< HEAD
-                                    <input class="au-input au-input--full" type="text" name="name" placeholder="Mercadinho do seu Zé">
-=======
-                                    <input class="au-input au-input--full" id="nome" type="text" name="name"
-                                        placeholder="Mercadinho do seu Zé">
->>>>>>> f2a9baf3222025fd27ef72c67789ad8a58997ca0
-                                </div>
-
-                                <div class="form-group">
-                                    <label>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        *Digite um codigo para o seu estabelecimento
-                                    </label>
-<<<<<<< HEAD
-                                    <input class="au-input au-input--full" type="text" name="code" placeholder="E1257BT7C2">
                                 </div>
                             </center>
-                            <center><button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Registrar estabelecimento</button></center>
-=======
-                                    <input class="au-input au-input--full" id="codigo" type="text" name="code"
-                                        placeholder="E1257BT7C2">
-                                </div>
-                            </center>
-                            <h5 style="font-size:10px;">*Os campos com asterisco (*) são obrigatórios e devem ter no
-                                mínimo 5 caracteres</h5>
-
-                            <center><button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Registrar
-                                    estabelecimento</button></center>
->>>>>>> f2a9baf3222025fd27ef72c67789ad8a58997ca0
+                            <center><button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Voltar a Dashboard</button></center>
                         </form>
-
-
                     </div>
                 </div>
             </div>
@@ -90,7 +65,6 @@
     <script src="vendor/select2/select2.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="funcoes.js"></script>
-
 </body>
 
 </html>
@@ -101,27 +75,24 @@
     verificar_autenticacao();
 
     function cadastrar() {
-
         var formulario = new URLSearchParams(new FormData(form_cadastro));
-        fetch(`/estabelecimentos/cadastrar/${getIdUsuario()}`, {
+        fetch(`/usuarios/redirecionar`, {
             method: "POST",
             body: formulario
         }).then(function(response) {
 
             if (response.ok) {
 
-                window.location.href = 'estabelecimentos.html';
+                window.location.href = 'dash.html';
 
             } else {
 
-                console.log('Erro de cadastro!');
+                console.log('Erro ao redirecionar um usuário');
                 response.text().then(function(resposta) {});
 
             }
         });
 
         return false;
-
-        mensagem.style.color = 'red';
     }
 </script>
