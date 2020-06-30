@@ -359,8 +359,22 @@
     <script type="text/javascript" src="funcoes.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"
-        integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
-        crossorigin="anonymous"></script>
+        integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        // <![CDATA[
+        var ttChatLoaderS = document.createElement('script');
+        document.tomticketChatLoaderScriptVersion = 2;
+        ttChatLoaderS.src = 'https://kprunnin.tomticket.com/scripts-chat/chat.min.js'
+            + '?id=EP46889'
+            + '&autoOpen=0'
+            + '&hideWhenOffline=0'
+            + '&d=kprunnin'
+            + '&ts=' + new Date().getTime()
+            + '&ref=' + encodeURIComponent(document.URL);
+        document.body.appendChild(ttChatLoaderS);
+        //]]>
+    </script>
 </body>
 
 </html>
@@ -515,17 +529,17 @@
                         alerta.push(`${registro.alerta}`);
                         dataAlerta.push(`${registro.dataAlerta}`);
                         codigoMaquina.push(`${registro.codigoMaquina}`);
-                        
+
                         if (((contador * 10) + conta) <= 250) {
                             doc.text(`- Data do alerta:${dataAlerta[i]}, Código da máquina correspondente: ${codigoMaquina[i]}, `, 10, ((contador * 10) + conta));
                             doc.text(`Alerta: ${alerta[i]}`, 10, ((contador * 10) + conta + 10));
                         } else {
                             contador = 0;
-                            conta = 50; 
+                            conta = 50;
                             doc.addPage();
                             doc.text(`- Data do alerta:${dataAlerta[i]}, Código da máquina correspondente: ${codigoMaquina[i]}, `, 10, ((contador * 10) + conta));
                             doc.text(`Alerta: ${alerta[i]}`, 10, ((contador * 10) + conta + 10));
-                            
+
                         }
                         conta += 15;
                         contador++;
